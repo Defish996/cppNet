@@ -57,7 +57,7 @@ std::string HandlerHTTPRequest(std::string &request) // 接受的参数假设我
         content = req.Get_404();
     }
 
-    code = 307;// 临时重定向, 会重定向到新的url, 这个新的url放在location中
+    //code = 307;// 临时重定向, 会重定向到新的url, 这个新的url放在location中
 
 
     // 构建响应
