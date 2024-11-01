@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     if(argc != 2)
     {
         Usage(argv[0]);
-        return 1;
+        return -1;
     }
 
     int port = std::stoi(argv[1]);
@@ -23,5 +23,5 @@ int main(int argc, char *argv[])
 
     svr->InitServer();
     svr->Loop();
-
+    return 0;
 }
